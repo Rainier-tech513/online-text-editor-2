@@ -43,7 +43,7 @@ const initializer = () => {
 };
 
 const modifyText = (command, defaultUi, Value) => {
-    document.exeeCommand(command, defaultUi, Value);
+    document.execCommand(command, defaultUi, Value);
 };
 
 optionsButtons.forEach((button) => {
@@ -93,4 +93,4 @@ const highlighterRemover = (className) => {
     });
 };
 
-window.onload.initializer();
+window.onload = initializer;
